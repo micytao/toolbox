@@ -26,7 +26,7 @@ RUN rm -f /usr/bin/oc && \
     echo "🐨🐨🐨🐨🐨"
 
 # jq / yq
-RUN curl -sLo /usr/local/bin/jq https://github.com/stedolan/jq/releases/download/jq-${JQ_VERSION}/jq-linux_arm64 && \
+RUN curl -sLo /usr/local/bin/jq https://github.com/jqlang/jq/releases/download/jq-${JQ_VERSION}/jq-linux-arm64 && \
     chmod +x /usr/local/bin/jq && \
     curl -sLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/yq_linux_arm64 && \
     chmod +x /usr/local/bin/yq && \
